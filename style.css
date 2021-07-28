@@ -1,0 +1,169 @@
+li {
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: calc(100% - 40px);
+}
+
+.container-black {
+  margin: 0 auto;
+  background-color: black;
+  max-width: 1920px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  height: 200px;
+  max-width: 1440px;
+  width: calc(100% - 40px);
+}
+
+.text-icon {
+  font-family: Forum;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-left: 55px;
+}
+
+.icon {
+  background-image: url("assets/svg/logo.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.list-navigation {
+  max-width: 720px;
+  display: flex;
+}
+
+.item-navigation {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 22px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  padding: 74px 76px 76px 0px;
+}
+
+.section-title {
+  font-family: Forum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.container-pyramid {
+  background-image: url("assets/img/pyramid.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-attachment: local;
+  margin: 0 auto;
+  padding: 0;
+  background-size: 1215px 750px;
+}
+
+.welcome-content {
+  color: #FFFFFF;
+  height: 750px;
+  width: 1440px;
+  margin: 0 auto;
+  padding-top: 114px;
+}
+
+.welcome-text {
+  color: #FFFFFF;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 2px;
+}
+
+.welcome-button-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+}
+
+.welcome-button {
+  width: 360px;
+  height: 75px;
+  left: 0px;
+  top: 0px;
+  background: #710707;
+  border-radius: 10px;
+}
+
+.viziting-conteiner-pictures{
+  max-width: 1440px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 77px;
+  column-gap: 60px;
+}
+
+.explore-text{
+  color: #FFFFFF;
+}
+
+.explore-content{
+  display: flex;
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 75px;
+}
+
+.tickets-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1440px;
+  width: calc(100% - 40px);
+}
+
+.tictets-type {
+  color: #FFFFFF;
+}
+
+.tickets-amount{
+  color: #FFFFFF;
+}
+
+.contacts-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1440px;
+  width: calc(100% - 40px);
+}
+
+.footer-content {
+  display: flex;
+}
+
+.footer-list-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 366px;
+  row-gap: 0px;
+  column-gap: 10px;
+}
