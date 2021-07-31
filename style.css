@@ -5,7 +5,7 @@
 
 a {
   text-decoration: none;
-  }
+}
 
 @font-face {
   font-family: Roboto;
@@ -74,7 +74,6 @@ li {
   color: #FFFFFF;
   padding: 74px 76px 76px 0px;
 }
-
 
 .section-title {
   font-family: Forum;
@@ -210,15 +209,47 @@ li {
   color: #000000;
 }
 
-.explore-text {
-  color: #FFFFFF;
-}
-
 .explore-content {
   display: flex;
   margin: 0 auto;
   max-width: 1440px;
   padding: 75px;
+}
+
+.explore-container-title {
+  color: #FFFFFF;
+  position: relative;
+}
+
+.explore-container-title::after {
+  content: "";
+  position: absolute;
+  bottom: -26px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #710707;
+  width: 660px;
+}
+
+.explore-text-container {
+  margin-top: 106px;
+}
+
+.explore-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 38px;
+  color: #FFFFFF;
+  margin-top: 25px;
+  letter-spacing: 0.7px;
+  margin-right: 70px;
+}
+
+.explore-img {
+  margin-top: 15px;
 }
 
 .tickets-content {
