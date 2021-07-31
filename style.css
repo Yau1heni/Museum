@@ -1,3 +1,13 @@
+@font-face {
+  font-family: Roboto;
+  src: url("assets/fonts/Roboto.ttf");
+}
+
+@font-face {
+  font-family: Forum;
+  src: url("assets/fonts/Forum-Regular.ttf");
+}
+
 li {
   list-style: none;
 }
@@ -12,6 +22,7 @@ li {
   margin: 0 auto;
   background-color: black;
   max-width: 1920px;
+  
 }
 
 .header-container {
@@ -25,13 +36,14 @@ li {
 }
 
 .text-icon {
+  font-size: 28px;
   font-family: Forum;
   font-style: normal;
   font-weight: normal;
   letter-spacing: 5px;
   text-transform: uppercase;
   color: #FFFFFF;
-  margin-left: 55px;
+  margin-left: 70px;
 }
 
 .icon {
@@ -63,6 +75,7 @@ li {
   line-height: 90px;
   letter-spacing: 5px;
   text-transform: uppercase;
+  margin-bottom: 0px;
 }
 
 .container-pyramid {
@@ -76,21 +89,21 @@ li {
 }
 
 .welcome-content {
+  padding-top: 52px;
   color: #FFFFFF;
-  height: 750px;
+  height: 700px;
   width: 1440px;
   margin: 0 auto;
-  padding-top: 114px;
 }
 
 .welcome-text {
   color: #FFFFFF;
   font-family: Roboto;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 300px;
   font-size: 28px;
   line-height: 33px;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
 }
 
 .welcome-button-text {
@@ -106,13 +119,12 @@ li {
 .welcome-button {
   width: 360px;
   height: 75px;
-  left: 0px;
-  top: 0px;
   background: #710707;
   border-radius: 10px;
+  margin-top: 47px;
 }
 
-.viziting-conteiner-pictures{
+.viziting-conteiner-pictures {
   max-width: 1440px;
   display: flex;
   flex-wrap: wrap;
@@ -120,11 +132,11 @@ li {
   column-gap: 60px;
 }
 
-.explore-text{
+.explore-text {
   color: #FFFFFF;
 }
 
-.explore-content{
+.explore-content {
   display: flex;
   margin: 0 auto;
   max-width: 1440px;
@@ -144,7 +156,7 @@ li {
   color: #FFFFFF;
 }
 
-.tickets-amount{
+.tickets-amount {
   color: #FFFFFF;
 }
 
