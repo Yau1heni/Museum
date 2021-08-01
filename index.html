@@ -35,14 +35,16 @@
         <section class="welcome" id="welcome">
             <div class="container-black">
                 <div class="container-pyramid">
-                    <div class="welcome-content">
-                        <div class="title-container">
-                            <h2 class="section-title">Welcome <br>to the louvre</h2>
+                    <div class="img-pyramid">
+                        <div class="welcome-content">
+                            <div class="title-container">
+                                <h2 class="section-title">Welcome <br>to the louvre</h2>
+                            </div>
+                            <p class="welcome-text">From the castle to the museum</p>
+                            <button class="welcome-button">
+                                Discover the Louvre
+                            </button>
                         </div>
-                        <p class="welcome-text">From the castle to the museum</p>
-                        <button class="welcome-button">
-                            <p class="welcome-button-text">Discover the Louvre</p>
-                        </button>
                     </div>
                 </div>
             </div>
@@ -129,9 +131,16 @@
         </section>
         <section class="video" id="video">
             <div class="container">
-                <img src="assets/img/video.jpg" alt="img">
-                <video src="assets/video/video.mp4" poster="assets/video/poster.jpg" controls></video>
-                <input type="range" value="40" min="0" max="100" step="1" class="progress">
+                <video width="1440px" poster="assets/img/video.jpg"></video>
+                <div class="container-progress">
+                    <button class="player-button">back</button>
+                    <button class="player-button">play</button>
+                    <button class="player-button">forward</button>
+                    <input type="range" value="40" min="0" max="100" step="1" class="progress">
+                    <button class="player-button">volume</button>
+                    <input type="range" value="40" min="0" max="100" step="1" class="volume">
+                    <button class="player-button">expand</button>
+                </div>
                 <h2 class="section-title">Video journey</h2>
                 <p>Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa
                     or Hammurabi's Code</p>
@@ -145,18 +154,33 @@
                     </div>
                     <div class="tickets-content">
                         <div class="tickets-img"><img src="assets/img/buy-tickets.jpg" alt="img"></div>
-                        <div class="tictets-type">
-                            <p>Ticket type</p>
-                            <p><input type="radio" name="type" value="1" />Permanent exhibition</p>
-                            <p><input type="radio" name="type" value="2" />Temporary exhibition<br></p>
-                            <p><input type="radio" name="type" value="3" />Combined Admission</p>
+                        <div class="tickets-type-container">
+                            <p class="tickets-type-title">Ticket Type</p>
+                            <p class="tickets-type-item"><input type="radio" name="type" value="1"
+                                    class="tickets-radio" />Permanent exhibition</p>
+                            <p class="tickets-type-item"><input type="radio" name="type" value="2"
+                                    class="tickets-radio" />Temporary exhibition<br></p>
+                            <p class="tickets-type-item"><input type="radio" name="type" value="3"
+                                    class="tickets-radio" />Combined Admission</p>
                         </div>
                         <div class="tickets-amount">
-                            <p>Amount</p>
-                            <label for="tentacles">Number of tentacles (10-100):</label>
-                            <button type="button">-</button>
-                            <input type="number" value="1" class="number" id="tentacles">
-                            <button type="button">+</button>
+                            <p class="tickets-type-title">Amount</p>
+                            <p class="tickets-type-amount">Basic 18+</p>
+                            <div class="container-amount">
+                                <button class="tickets-button">-</button>
+                                <input type="number" class="tickets-count" value="1" min="1" max="100">
+                                <button class="tickets-button">+</button>
+                            </div>
+                            <p class="tickets-type-amount">Senior 65+</p>
+                            <div class="container-amount">
+                                <button class="tickets-button">-</button>
+                                <input type="number" class="tickets-count" value="1" min="1" max="100">
+                                <button class="tickets-button">+</button>
+                            </div>
+                            <p class="tickets-total">Total €220</p>
+                            <button class="tickets-buy-now">
+                                <p>Buy Now</p>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -168,12 +192,12 @@
                     <h2 class="section-title">Contacts</h2>
                 </div>
                 <div class="contacts-content">
-                    <div class="contacts-text">
+                    <div class="contacts-text-container">
                         <h3 class="contacts-text">Palais Royal</h3>
                         <h3 class="contacts-text">Musee du Louvre</h3>
-                        <p>address: 75001 Paris, France</p>
-                        <p>phone: +33(0) 1 40 20 50 50</p>
-                        <p>mail: info@louvre.fr</p>
+                        <p class="contacts-text-contact">address: 75001 Paris, France</p>
+                        <p class="contacts-text-contact">phone: +33(0) 1 40 20 50 50</p>
+                        <p class="contacts-text-contact">mail: info@louvre.fr</p>
                     </div>
                     <div class="contacts-map">
                         <img src="assets/img/map.jpg" alt="map">
@@ -186,14 +210,16 @@
         <div class="container-black">
             <div class="container">
                 <div class="footer-content">
-                    <div class="icon">
-                        <h1 class="text-icon">Louvre</h1>
+                    <div class="container-icon-footer">
+                        <h1 class="icon-footer">Louvre</h1>
                     </div>
                     <nav class="footer-nav">
-                        <ul class="footer-list-navigation">
+                        <ul class="footer-list-navigation-left">
                             <li class="footer-item-navigation"><a href="#welcome" class="link">Welcome</a></li>
                             <li class="footer-item-navigation"><a href="#visiting" class="link">Visiting</a></li>
                             <li class="footer-item-navigation"><a href="#explore" class="link">Explore</a></li>
+                        </ul>
+                        <ul class="footer-list-navigation-right">
                             <li class="footer-item-navigation"><a href="#video" class="link">Video</a></li>
                             <li class="footer-item-navigation"><a href="#tickets" class="link">Tickets</a></li>
                             <li class="footer-item-navigation"><a href="#contacts" class="link">Contacts</a></li>
@@ -201,11 +227,11 @@
                     </nav>
                     <div class="footer-sm">
                         <ul class="footer-list-sm">
-                            <li><a href="http://www.youtube.com"><img src="" alt="youtube" /></a></li>
-                            <li><a href="https://www.instagram.com"><img src="" alt="instagram" /></a></li>
-                            <li><a href="http://www.facebook.com"><img src="" alt="facebook" /></a></li>
-                            <li><a href="http://www.twitter.com"><img src="" alt="twitter" /></a></li>
-                            <li><a href="https://www.pinterest.com"><img src="" alt="pinterest" /></a></li>
+                            <li><a href="http://www.youtube.com">youtube</a></li>
+                            <li><a href="https://www.instagram.com">instagram</a></li>
+                            <li><a href="http://www.facebook.com">facebook</a></li>
+                            <li><a href="http://www.twitter.com">twitter</a></li>
+                            <li><a href="https://www.pinterest.com">pinterest</a></li>
                         </ul>
                     </div>
                 </div>
