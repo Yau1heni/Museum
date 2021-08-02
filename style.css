@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
 }
@@ -69,8 +73,15 @@ li {
   font-weight: 200;
   font-size: 22px;
   letter-spacing: 2px;
-  color: #FFFFFF;
   padding: 74px 76px 76px 0px;
+}
+
+.link {
+  color: #FFFFFF;
+}
+
+.link:hover, .link:active {
+  color: #9D8665;
 }
 
 .section-title {
@@ -132,6 +143,10 @@ li {
   color: #FFFFFF;
 }
 
+.welcome-button:hover {
+  background-color: #9D8665;
+}
+
 .viziting-title-container {
   position: relative;
   margin-top: 72px;
@@ -145,7 +160,9 @@ li {
   right: 0;
   height: 3px;
   background-color: #710707;
+  transition: 0.35s linear;
 }
+
 
 .viziting-container-pictures {
   max-width: 1440px;
@@ -183,6 +200,11 @@ li {
   height: 1px;
   width: 300px;
   background-color: #710707;
+}
+
+.viziting-text-h2-container:hover::after {
+  width: 440px;
+  transition: 0.5s linear;
 }
 
 .viziting-text-h3 {
@@ -268,6 +290,10 @@ li {
 
 .container-progress {
   background-color: black;
+}
+
+.player-button:hover, .player-button:active {
+  color: #9D8665;
 }
 
 .tickets-title-container {
@@ -391,6 +417,10 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
   letter-spacing: 2px;
 }
 
+.tickets-buy-now:hover {
+  background-color: #9D8665;
+}
+
 .container-amount {
   border: 2px solid #FFFFFF;
   width: 142px;
@@ -454,7 +484,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 .footer-content {
   display: flex;
   padding-top: 80px;
-  padding-bottom: 300px;
+  height: 300px;
 }
 
 .icon-footer {
@@ -491,16 +521,49 @@ letter-spacing: 2px;
   margin-right: 173px;
 }
 
+.footer-sm {
+  margin-top: 87px;
+  margin-left: auto;
+}
+
 .footer-list-sm {
-  padding: 100px
+  display: flex;
 }
-.footer-list-sm li{
+.footer-list-sm li {
   display: inline;
-  margin-right: 5px
+  margin-left: 24px;
 }
 
+.container-item-sm {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+}
 
+.icon-youtube, .icon-instagram, .icon-facebook, .icon-twitter, .icon-pinterest {
+  width: 45px;
+  height: 45px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.icon-youtube {
+  background-image: url("assets/svg/youtube.svg");
+}
+.icon-instagram {
+  background-image: url("assets/svg/instagram.svg");
+}
+.icon-facebook {
+  background-image: url("assets/svg/facebook.svg");
+}
+.icon-twitter {
+  background-image: url("assets/svg/twitter.svg");
+}
+.icon-pinterest {
+  background-image: url("assets/svg/pint.svg");
+}
 
-
-
+.container-item-sm:hover {
+  filter: invert(0.5) sepia(1);
+}
 
